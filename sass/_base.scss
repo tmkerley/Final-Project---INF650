@@ -1,0 +1,68 @@
+$font-color: rgb(255, 255, 255);
+$font-stack: 'montserrat', sans-serif;
+$font-weight-s: 300;
+$font-weight-m: 500;
+$font-weight-l: 700;
+$font-weight-xl: 900;
+$text-shadow-color: rgba(0, 0, 0, 0.6);
+$bkg-color: rgba(255, 255, 255, 0);
+$bkg-sb-color: rgba(255, 255, 255, 0.3);
+$bkg-sb-focus-color: rgba(255, 255, 255, 0.6);
+$border-bot-color:rgb(255, 255, 255);
+
+%flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexColumn {
+    @extend %flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flexCenter {
+  @extend %flex;
+  justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: $font-stack;
+    background-image: url('/Media/bg.jpg');
+    background-size: cover;
+    background-position: top center;
+    font-size: 12px;
+    color: $font-color;
+  }
+  
+  header {
+    @include flexColumn;
+    padding: 50px 15px 15px;
+  }
+  
+  main {
+    @include flexColumn;
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    text-align: center;
+  }
+
+  button {
+    margin-top: 24px;
+    padding: 8px;
+    border: none;
+    background-color: $bkg-sb-color;
+    border-radius: 16px 4px 16px 4px;
+    border-bottom: 3px solid $border-bot-color;
+    color: $font-color;
+  }
+  button:hover {
+    background-color: $bkg-sb-focus-color;
+    color: rgb(0, 0, 0)
+  }

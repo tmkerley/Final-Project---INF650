@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>T.Kerley - INF650 - Weather Final</title>
+  <link rel="stylesheet" href="/sass/styles.css" />
+</head>
+
+<body>
+  <div class="app-wrap">
+    <header>
+        <label for="search-box" class="hidden">search-box</label>
+        <input type="text" autocomplete="off" class="search-box" id="search-box" 
+        name="search-box" placeholder="Search for a city..." />
+        
+        <button type="button" class="default-button" id="default-button">Set Default City</button>
+    </header>
+
+    <main>
+      <section class="location">
+        <div class="city">City</div>
+        <div class="date">day Date Month Year</div>
+      </section>
+
+      <div class="current">
+        <div class="temp">--<span>°F</span></div>
+        <div class="weather">weather</div>
+        <div class="hi-low">low°F / high°F</div>
+      </div>
+
+    </main>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/defaultCity.js"></script>
+</body>
+</html>

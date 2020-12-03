@@ -1,0 +1,19 @@
+  header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: $bkg-sb-color;
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid $border-bot-color;
+    
+    font-size: 1.5rem;
+    font-weight: $font-weight-s;
+    color: $font-color;
+    transition: .6s ease-out;
+  }
+  header input:focus {
+    background-color: $bkg-sb-focus-color;
+    color: rgb(0,0,0);
+  }
